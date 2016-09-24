@@ -8,7 +8,7 @@
 <meta name="keywords" content="Samosa" />
 <meta name="robots" content="INDEX,FOLLOW" />
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
+<script src="1.js"></script>
 
 
 <link rel="stylesheet" type="text/css" href="style2.css" media="all" />
@@ -110,7 +110,7 @@ jQuery(document).ready(function () {
 				<div>
 
 					<div class="collapse navbar-collapse main-nav">
-						<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
               <div class="container">
 
 
@@ -120,6 +120,39 @@ jQuery(document).ready(function () {
 
                   </div>
 						</div>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 crt">
+              <ul class="nav navbar-nav">
+                   <li>
+    <form name="formlol" METHOD="LINK" ACTION="payment.html">
+      <input type="submit" onclick="
+      var a=document.getElementById('samosablue').childNodes[1].textContent;
+      var b=document.getElementById('sevpuriblue').childNodes[1].textContent;
+      var c=document.getElementById('ragdablue').childNodes[1].textContent;
+      var d=document.getElementById('alooblue').childNodes[1].textContent;
+      var e=document.getElementById('papdiblue').childNodes[1].textContent;
+      var f=document.getElementById('dahiblue').childNodes[1].textContent;
+      var g=document.getElementById('bhelblue').childNodes[1].textContent;
+      var h=document.getElementById('tikkiblue').childNodes[1].textContent;
+      var i=document.getElementById('dahivadablue').childNodes[1].textContent;
+
+       localStorage.setItem('ca',a);
+       localStorage.setItem('cb',b);
+       localStorage.setItem('cc',c);
+       localStorage.setItem('cd',d);
+       localStorage.setItem('ce',e);
+       localStorage.setItem('cf',f);
+       localStorage.setItem('cg',g);
+       localStorage.setItem('ch',h);
+       localStorage.setItem('ci',i);
+       ">
+
+    </FORM>
+
+
+
+        </li>
+              </ul>
+                  </div>
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 crt">
               <ul class="nav navbar-nav">
                    <li>
@@ -270,7 +303,7 @@ jQuery(document).ready(function () {
                                 <a href="#" onclick="showminusme('sevpuriblue','sevpuriminus');"  title="Sev Puri">
                                       <img class="img-responsive" src="chats/sev_puri.jpg" alt="Sev Puri">
 									                    <div class="selectdimg" id="sevpuriblue" style='display:none'>
-                                        <p class="number" id="">0</p>
+                                        <p class="number" id="sevpurinumber">0</p>
                                         <p class="dec" id="">Item in cart</p>
                                     </div>
                                   </a>
@@ -334,7 +367,7 @@ jQuery(document).ready(function () {
                                 <a href="#" onclick="showminusme('ragdablue','ragdaminus');"  title="Ragda Patties">
                                       <img class="img-responsive" src="chats/ragda_patties.jpg" alt="Ragda Patties">
 									                      <div class="selectdimg" id="ragdablue" style='display:none'>
-                                        <p class="number" id="">0</p>
+                                        <p class="number" id="ragdanumber">0</p>
                                         <p class="dec" id="">Item in cart</p>
                                     </div>
                                   </a>
@@ -397,7 +430,7 @@ jQuery(document).ready(function () {
                                 <a href="#" onclick="showminusme('dahiblue','dahiminus');"  title="Dahi Puri">
                                       <img class="img-responsive" src="chats/dahi_puri.jpg" alt="Dahi Puri">
 									                    <div class="selectdimg" id="dahiblue" style='display:none'>
-                                        <p class="number" id="http://www.innerchef.com/bangalore/checkout/cart/add/uenc/aHR0cDovL3d3dy5pbm5lcmNoZWYuY29tL2JhbmdhbG9yZS8,/product/548/form_key/3RXpGJWhFv4k2Pcw/found">0</p>
+                                        <p class="number" id="dahinumber">0</p>
                                         <p class="dec" id="http://www.innerchef.com/bangalore/checkout/cart/add/uenc/aHR0cDovL3d3dy5pbm5lcmNoZWYuY29tL2JhbmdhbG9yZS8,/product/548/form_key/3RXpGJWhFv4k2Pcw/decid">Item in cart</p>
                                     </div>
                                   </a>
@@ -460,7 +493,7 @@ jQuery(document).ready(function () {
                        <a href="#" onclick="showminusme('papdiblue','papdiminus');"  title="Papdi Chat">
                              <img class="img-responsive" src="chats/papri_chat.jpg" alt="Papdi Chat">
                               <div class="selectdimg" id="papdiblue" style='display:none'>
-                               <p class="number" id="http://www.innerchef.com/bangalore/checkout/cart/add/uenc/aHR0cDovL3d3dy5pbm5lcmNoZWYuY29tL2JhbmdhbG9yZS8,/product/548/form_key/3RXpGJWhFv4k2Pcw/found">0</p>
+                               <p class="number" id="papdinumber">0</p>
                                <p class="dec" id="http://www.innerchef.com/bangalore/checkout/cart/add/uenc/aHR0cDovL3d3dy5pbm5lcmNoZWYuY29tL2JhbmdhbG9yZS8,/product/548/form_key/3RXpGJWhFv4k2Pcw/decid">Item in cart</p>
                            </div>
                          </a>
@@ -798,7 +831,7 @@ Now available on InnerChef, order away to enjoy our tubs and ice cream sandwiche
 
 
                                                                                             <div class="pimg">
-                                <a href="#" onclick="showminusme('bhelblue','bhelminus');"  title="Bhel Puri">
+                                <a href="#" onclick="showminusme('samosablue','samosaminus');"  title="Bhel Puri">
                                       <img class="img-responsive" src="chats/bhel.jpg" alt="Bhel Puri">
 									                <div class="selectdimg" id="bhelblue" style='display:none'>
                                         <p class="number" id="http://www.innerchef.com/bangalore/checkout/cart/add/uenc/aHR0cDovL3d3dy5pbm5lcmNoZWYuY29tL2JhbmdhbG9yZS8,/product/882/form_key/3RXpGJWhFv4k2Pcw/found">0</p>
@@ -1008,126 +1041,7 @@ Now available on InnerChef, order away to enjoy our tubs and ice cream sandwiche
 
 
     }
-    </script>
-<script>
-function setLocationAjax(url, pprice, pid){
-
-    if(!pprice){pprice = 0;}
-      if(!pid){pid = 0;}
-
-	 dataLayer.push({'event': 'AddToCart', 'productId': ''+pid+'', 'currency': 'INR', 'productPrice': ''+pprice+''});
-    var $j = jQuery.noConflict();
-    var qty = 1;
-    var count = $j('.countcart').text();
-    //alert("Count - "+count);
-    if(count == 0)
-    {
-        count = 0;
-    }
-    var cartval = parseInt(count) + 1 ;
-    //document.getElementById('mynumber').innerHTML=cartval;
-    //alert("Cartval - "+cartval);
-    $j('.countcart').html(cartval).css('display','block');
-    $j('.countcart2').html(cartval).css('display','block');
-    try {
-        $j.ajax( {
-            type:'post',
-            url : url,
-            data : {qty:qty},
-            success : function(data) {
-
-
-
-                if(data) {updatevariables();}
-
-            }
-        });
-    }
-    catch (e) {
-        alert(e);
-    }
-    showmydisplay(url, pprice, pid);
-}
-function showmydisplay(url, pprice, pid)
-{
-	var strVar="";
-strVar += "<script>dataLayer.push({'event': 'AddToCart', 'productId': '"+pid+"', 'currency': 'INR', 'productPrice': '"+pprice+"'});<\/script> ";
-    document.getElementById(url+"changescript").innerHTML = strVar;
-        if(document.getElementById(url))
-        {
-            //alert('found');
-            //alert(document.getElementById(url+'found').innerHTML);
-            document.getElementById(url+'found').innerHTML=(parseInt(document.getElementById(url+'found').innerHTML)+1);
-        }
-        else
-        {
-            //alert('not found');
-            document.getElementById(url+'mydiv').style.display="block";
-            var mynumber = document.getElementById(url+'found').innerHTML;
-            //alert(mynumber);
-            mynumber=parseInt(mynumber)+1;
-            document.getElementById(url+'found').innerHTML=mynumber;
-            //alert('i guess i have added');
-        }
-
-
-
-		if(parseInt(document.getElementById(url+'found').innerHTML)==1)
-        {
-            document.getElementById(url+'decid').innerHTML='Item in cart';
-        }
-
-        else if(parseInt(document.getElementById(url+'found').innerHTML)>1)
-        {
-            document.getElementById(url+'decid').innerHTML='Items in cart';
-        }
-}
-function subtractproduct(productid, formkey, url12){
-    //alert(cartid);
-    //alert(getbaseurl());
-    var qty = parseInt(document.getElementById('productqty'+productid).value)-1
-    var cartid = document.getElementById('cartid'+productid).value
-	var $j = jQuery.noConflict();
-    try {
-        $j.ajax( {
-            type:'post',
-            url : getbaseurl()+'checkout/cart/ajaxUpdate',
-            data : {qty:qty,id:cartid,form_key:formkey},
-            success : function(data) {
-                //document.getElementById(url12+'waiting').style.display="none";
-                //alert(data);
-                if(data) {updatevariables();}
-            }
-        });
-    }
-    catch (e) {
-        alert(e);
-    }
-}
-function updatevariables(){
-
-    try {
-        $j.ajax( {
-            type:'get',
-            url : getbaseurl()+'checkout/cart/cartdataPlus/',
-            success : function(data) {
-                //alert(data);
-                if(data) {document.getElementById('updatevariables').innerHTML=data;}
-            }
-        });
-    }
-    catch (e) {
-        alert(e);
-    }
-}
-function getbaseurl(){return "http://www.innerchef.com/bangalore/"; }
-function shaker()
-{
-var $j = jQuery.noConflict();
-$j( "#toggle" ).effect('shake', { distance: 5, times: 2 });
-}
-updatevariables();
-</script></p>
+    </script></p>
 </div>
 </div>
 </div>

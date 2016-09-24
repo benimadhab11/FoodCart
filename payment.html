@@ -11,9 +11,7 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
-<!--end of head-->
-        
-</head>
+
 
 <body>
 
@@ -40,7 +38,7 @@
                         <em>Date: 1st November, 2013</em>
                     </p>
                     <p>
-                        <em>Tocken No. #: 34522677W</em>
+                      Tocken No. #: <em id="tokenid">1</em>
                     </p>
                 </div>
             </div>
@@ -60,36 +58,71 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="col-md-9"><em><input class="form-control"></em></h4></td>
-                            <td class="col-md-1" style="text-align: center"> <input class="form-control"> </td>
-                            <td class="col-md-1 text-center"><input class="form-control"></td>
-                            <td class="col-md-1 text-center"><input class="form-control"></td>
+
                         </tr>
-                    
+
                         <tr>
-                            <td>   </td>
-                            <td>   </td>
-                            <td class="text-right">
-                            <p>
-                                <strong>Subtotal: </strong>
-                            </p>
-                            <p>
-                                <strong>Tax:</strong>
-                            </p></td>
-                            <td class="text-center">
-                            <p>
-                                <input class="form-control" >
-                            </p>
-                            <p>
-                                <input class="form-control" type="text" style="width 50px">
-                            </p>
-                            </td>
+                            <td> Samosa Chat </td>
+                            <td id="sa"></td>
+                            <td id="saprice" class="text-center">30</td>
+                            <td id="satotal" class="text-center"></td>
                         </tr>
                         <tr>
-                            <td>   </td>
-                            <td>   </td>
-                            <td class="text-right"><h4><strong>Total: </strong></h4></td>
-                            <td><input type="email" class="form-control input-normal"></td>
+                            <td> Sev Puri </td>
+                            <td id="sb">  0 </td>
+                            <td id="sbprice" class="text-center">20</td>
+                            <td id="sbtotal" class="text-center">0 </td>
+                        </tr>
+                        <tr>
+                            <td> Ragda Patties </td>
+                            <td id="sc">  0 </td>
+                            <td  id="scprice" class="text-center">40</td>
+                            <td  id="sctotal" class="text-center">0 </td>
+                        </tr>
+                        <tr>
+                            <td> Dahi Puri  </td>
+                            <td id="sd">  0 </td>
+                            <td id="sdprice" class="text-center">30</td>
+                            <td  id="sdtotal" class="text-center">0 </td>
+                        </tr>
+                        <tr>
+                            <td> Papdi Chat  </td>
+                            <td id="se">  0 </td>
+                            <td id="seprice" class="text-center">30</td>
+                            <td id="setotal" class="text-center">0 </td>
+                        </tr>
+                        <tr>
+                            <td> Aloo Tikki  </td>
+                            <td id="sf">  0 </td>
+                            <td  id="sfprice" class="text-center">40</td>
+                            <td  id="sftotal" class="text-center">0 </td>
+                        </tr>
+                        <tr>
+                            <td> Aloo Chat </td>
+                            <td id="sg">  0 </td>
+                            <td id="sgprice" class="text-center">40</td>
+                            <td id="sgtotal" class="text-center">0 </td>
+                        </tr>
+
+                        <tr>
+                            <td> Dahi Vada  </td>
+                            <td id="sh">  0 </td>
+                            <td id="shprice" class="text-center">40</td>
+                            <td id="shtotal" class="text-center">0 </td>
+                        </tr>
+
+
+                        <tr>
+                            <td> Bhel Puri  </td>
+                            <td id="si">  0 </td>
+                            <td id="siprice" class="text-center">40</td>
+                            <td id="sitotal" class="text-center">0 </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td id="" ></td>
+                            <td  class="text-right"><h4><strong>Total: </strong></h4></td>
+                            <td id="total" class="text-center">0 </td>
                         </tr>
                     </tbody>
                 </table>
@@ -98,6 +131,44 @@
                 </button></td>
             </div>
         </div>
+        <script>
+        function load(){console.log(localStorage.getItem('ca'));
+
+        document.getElementById("sa").innerHTML = localStorage.getItem('ca');
+        document.getElementById("satotal").innerHTML = parseInt(localStorage.getItem('ca'))*parseInt(document.getElementById("saprice").innerHTML);
+
+
+        document.getElementById("sb").innerHTML = localStorage.getItem('cb');
+        document.getElementById("sbtotal").innerHTML = parseInt(localStorage.getItem('cb'))*parseInt(document.getElementById("sbprice").innerHTML);
+
+
+        document.getElementById("sc").innerHTML = localStorage.getItem('cc');
+        document.getElementById("sctotal").innerHTML = parseInt(localStorage.getItem('cc'))*parseInt(document.getElementById("scprice").innerHTML);
+
+        document.getElementById("sd").innerHTML = localStorage.getItem('cd');
+        document.getElementById("sdtotal").innerHTML = parseInt(localStorage.getItem('cd'))*parseInt(document.getElementById("sdprice").innerHTML);
+
+        document.getElementById("se").innerHTML = localStorage.getItem('ce');
+        document.getElementById("setotal").innerHTML = parseInt(localStorage.getItem('ce'))*parseInt(document.getElementById("seprice").innerHTML);
+
+        document.getElementById("sf").innerHTML = localStorage.getItem('cf');
+        document.getElementById("sftotal").innerHTML = parseInt(localStorage.getItem('cf'))*parseInt(document.getElementById("sfprice").innerHTML);
+
+        document.getElementById("sg").innerHTML = localStorage.getItem('cg');
+        document.getElementById("sgtotal").innerHTML = parseInt(localStorage.getItem('cg'))*parseInt(document.getElementById("sgprice").innerHTML);
+
+        document.getElementById("sh").innerHTML = localStorage.getItem('ch');
+        document.getElementById("shtotal").innerHTML = parseInt(localStorage.getItem('ch'))*parseInt(document.getElementById("shprice").innerHTML);
+
+        document.getElementById("si").innerHTML = localStorage.getItem('ci');
+        document.getElementById("sitotal").innerHTML = parseInt(localStorage.getItem('ci'))*parseInt(document.getElementById("siprice").innerHTML);
+        document.getElementById('total').innerHTML=parseInt(document.getElementById("satotal").innerHTML)+parseInt(document.getElementById("sbtotal").innerHTML)+parseInt(document.getElementById("sctotal").innerHTML)+parseInt(document.getElementById("sftotal").innerHTML)+parseInt(document.getElementById("sgtotal").innerHTML)+parseInt(document.getElementById("sdtotal").innerHTML)+parseInt(document.getElementById("shtotal").innerHTML)+parseInt(document.getElementById("sitotal").innerHTML);
+
+var x=1+parseInt(document.getElementById("tokenid").innerHTML);
+document.getElementById("tokenid").innerHTML=Math.random();
+      }
+      load();
+        </script>
 </body>
 
 

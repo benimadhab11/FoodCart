@@ -126,9 +126,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <button type="button" class="btn btn-success btn-lg btn-block">
-                    Pay Now<span class="glyphicon glyphicon-chevron-right"></span>
-                </button></td>
+                  <a href="sales.html"  onclick="insRow();">Pay Now</a>
             </div>
         </div>
         <script>
@@ -166,6 +164,10 @@
 
 var x=1+parseInt(document.getElementById("tokenid").innerHTML);
 document.getElementById("tokenid").innerHTML=Math.random();
+localStorage.setItem('token',document.getElementById("tokenid").innerHTML);
+
+localStorage.setItem('total',document.getElementById("total").innerHTML);
+
       }
       load();
         </script>

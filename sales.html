@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+
+ 	<title>Payment</title>
+ 	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+
+
+
+	<div class="container">
+    <div class="row">
+        <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <address>
+                        <strong> Food Cart</strong>
+                        <br>
+                        New Delhi
+                        <br>
+                        India, 12345
+                        <br>
+                        <abbr title="Phone">P:</abbr> (213) 484-6829
+                    </address>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                    <p>
+                        <em>Date: 1st November, 2013</em>
+                    </p>
+                    <p>
+                      Tocken No. #: <em id="tokenid">1</em>
+                    </p>
+                </div>
+            </div>
+            <div>
+              <table id="table" class="table table-hover">
+                  <thead>
+                      <tr>
+                          <th>tokenid</th>
+                          <th>Sales</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+      function insRow()
+      {
+          var x=document.getElementById('table').insertRow(count);
+          var c1=x.insertCell(0);
+          var c2=x.insertCell(1);
+          c1.innerHTML=localStorage.getItem('token');
+              c2.innerHTML=localStorage.getItem('total');
+
+      }
+      insRow();
+      </script>
+        </body>
+
+
+</html>

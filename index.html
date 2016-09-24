@@ -8,7 +8,7 @@
 <meta name="keywords" content="Samosa" />
 <meta name="robots" content="INDEX,FOLLOW" />
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
-<script src="1.js"></script>
+
 
 
 <link rel="stylesheet" type="text/css" href="style2.css" media="all" />
@@ -123,8 +123,8 @@ jQuery(document).ready(function () {
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 crt">
               <ul class="nav navbar-nav">
                    <li>
-    <form name="formlol" METHOD="LINK" ACTION="payment.html">
-      <input type="submit" onclick="
+
+      <a href="payment.html" onclick="
       var a=document.getElementById('samosablue').childNodes[1].textContent;
       var b=document.getElementById('sevpuriblue').childNodes[1].textContent;
       var c=document.getElementById('ragdablue').childNodes[1].textContent;
@@ -145,8 +145,8 @@ jQuery(document).ready(function () {
        localStorage.setItem('ch',h);
        localStorage.setItem('ci',i);
        ">
-
-    </FORM>
+Submit
+    </a>
 
 
 
@@ -167,26 +167,15 @@ jQuery(document).ready(function () {
 
 
 				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 crt">
-                  <ul class="nav navbar-nav">
-                       <li>
-
-                        		<script>
-                           function changeValue(o){
-                             document.getElementById('typechange').value=o;
-                             document.getElementById('typechange2').value=o;
-                            }
-                        </script>
+          <ul class="nav navbar-nav">
+               <li>
+<a href="sales.html">My sales</a>
 
 
 
-		<a rel="nofollow" onclick="changeValue(1)" class="inweb" data-toggle="modal"   data-target="#myModal-sign-in">
-			<i id="toggle" class="fa fa-shopping-cart countcart" aria-hidden="true" >0</i>
-		</a>
 
-
-
-						</li>
-                  </ul>
+    </li>
+          </ul>
               </div>
               </div>
 

@@ -14,7 +14,7 @@
 <meta name="description" content="Delhi Food Cart" />
 <meta name="keywords" content="Samosa" />
 <meta name="robots" content="INDEX,FOLLOW" />
-<link rel="icon" href="" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 <!--[if lt IE 7]>
 <script type="text/javascript">
 //<![CDATA[
@@ -430,7 +430,7 @@ jQuery(document).ready(function () {
 				<div>
 
 					<div class="collapse navbar-collapse main-nav">
-						<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+						<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
               <div class="container">
 
 
@@ -441,7 +441,7 @@ jQuery(document).ready(function () {
                   </div>
 						</div>
 
-				<div class="col-xs-12 col-sm-2 col-md-2  col-lg-2 crt">
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 crt">
                   <ul class="nav navbar-nav">
                        <li>
 
@@ -461,7 +461,7 @@ jQuery(document).ready(function () {
 
 
 		<a rel="nofollow" onclick="changeValue('http://www.innerchef.com/bangalore/checkout/cart/')" class="inweb" data-toggle="modal"   data-target="#myModal-sign-in">
-			<i id="toggle" class="fa fa-shopping-cart countcart" aria-hidden="true" >5</i>
+			<i id="toggle" class="fa fa-shopping-cart countcart" aria-hidden="true" >0</i>
 		</a>
 
 
@@ -618,7 +618,7 @@ jQuery(document).ready(function () {
 <div class="col-xs-12 col-sm-12">
 <div class="row">
 <div class="title" style="margin-left: 14px;">
-<h3>Our Recommendation</h3>
+<h3>Chat Menu</h3>
 </div>
 </div>
 </div>
@@ -1874,67 +1874,36 @@ html {    scroll-behavior: smooth}
   }
   </style>
 
-<a href="#referralbottom" class="referral_popup">Share &amp; Earn</a>
-<script>
-function checkform_appsms(){
-	var regExp = /^0[0-9].*$/;
-	var telephone = document.getElementById("app_sms").value;
-	if(telephone == ''){
-		alert('Please enter a Phone Number.');
-		return false;
-	}
-	if(regExp.test(telephone)){
-		alert('Please enter a valid number.');
-		return false;
-	}
-	//contactformcheck();
-
-}
-</script>
-<script>
-$('#up, #referralbottom').on('click', function(e){
-    e.preventDefault();
-    var target= $(this).get(0).id == 'up' ? $('#referralbottom') : $('#up');
-    $('html, body').stop().animate({
-       scrollTop: target.offset().top
-    }, 5000);
-});
-</script>
-
-<!-- referral footer -->
-
-
-
 <!-- /.modal -->
-		<div class="footer">
+		<div class="footer" style="background-color:black">
 			<div class="container">
 			<!--does it start here-->
+      <div class="col-xs-2 col-md-2">
 
-          <div class="col-xs-12 col-md-12">
-						<span>DEVELOPERS</span>
-					</div>
-					<div class="col-xs-12 col-md-2">
-						<a rel="nofollow" href="">Beni</a>
+      </div>
+					<div class="col-xs-2 col-md-2">
+						<a rel="nofollow" href="" style="color:white">Beni</a>
 					</div>
 
 
-					<div class="col-xs-12 col-md-2">
-					<a rel="nofollow" href="">Gaurav</a>
+					<div class="col-xs-2 col-md-2">
+					<a rel="nofollow" href="" style="color:white">Gaurav</a>
 					</div>
-          <div class="col-xs-12 col-md-2">
-          <a rel="nofollow" href="">Avinash</a>
+          <div class="col-xs-2 col-md-2">
+          <a rel="nofollow" href="" style="color:white">Avinash</a>
           </div>
-          <div class="col-xs-12 col-md-2">
-          <a rel="nofollow" href="">Ranjeet</a>
+          <div class="col-xs-2 col-md-2">
+          <a rel="nofollow" href="" style="color:white">Ranjeet</a>
           </div>
-          <div class="col-xs-12 col-md-2">
-          <a rel="nofollow" href="">Rahul</a>
+          <div class="col-xs-2 col-md-2">
+          <a rel="nofollow" href="" style="color:white">Rahul</a>
           </div>
 
 
 			</div>
 			<div class="container">
-											<div class="col-xs-12 col-md-12">&copy; DUNGEN 2016</div>
+
+											<div class="col-xs-2 col-md-2" style="color:white">&copy; DUNGEN 2016</div>
 
 			</div>
 		</div>

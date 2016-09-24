@@ -129,9 +129,9 @@ a:hover { /*color: #fff;*/  text-decoration: none !important;}
 .products .nmdec{float:left; width:80%;}
 .products .pricedec{display: block;}
 .products .pricedec .price{font-size: 20px; color:#515252; float:left; width:30%;}
-.products .pricedec .addbox{width:70%; float:left;}
-.products .pricedec .addbox .plusbox{border:1px solid #515252; padding:5px 10px; color:#515252; float:right;}
-.products .pricedec .addbox .rdbox{float:right; background-color: #ed2365; padding:6px 10px; color:#fff; }
+.products .pricedec .addbox{width:30%; float:left;}
+.products .pricedec .addbox .plusbox{border:1px solid #515252; padding:5px 10px; color:#515252; float:left;}
+.products .pricedec .addbox .rdbox{float:right!important; background-color: #ed2365; padding:6px 10px; color:#fff; }
 .pdetail .pimg .selectdimg .number{margin-top: 22%;}
 .pdetail {margin: 20px 0px;}
 .pdetail .ptitle{ font-size:20px; color:#828484; padding:0px; display: block;}
